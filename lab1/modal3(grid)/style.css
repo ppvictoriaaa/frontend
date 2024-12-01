@@ -298,6 +298,52 @@ html {
   color: #ff5722;
 }
 
+@media (min-width: 1600px) {
+  .section1_img {
+    justify-self: end;
+    max-width: 60%;
+    height: 80%;
+  }
+  .section1_text h1 {
+    font-size: 70px;
+  }
+  p {
+    font-size: 30px;
+  }
+
+  .section2_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    height: auto;
+    width: 100%;
+  }
+
+  .section3_card {
+    height: auto;
+    width: 60%;
+  }
+  .section3_main_content {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  button {
+    font-size: larger;
+  }
+
+  .logo_elements {
+    grid-row: 1;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 0.2fr 0.3fr 0.3fr 3fr;
+  }
+
+  .section3_list li {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 1200px) {
   .section1_text h1 {
     font-size: 40px;
@@ -362,7 +408,7 @@ html {
 
   .section1 {
     background-color: #1c1c1c;
-    grid-template-rows: auto auto; 
+    grid-template-rows: auto auto;
     padding: 10px;
     align-items: center;
   }
@@ -389,15 +435,15 @@ html {
   }
 
   .logo_letters {
-    font-size: 30px; 
+    font-size: 30px;
   }
 
   .head_logo_img {
-    width: 50px; 
+    width: 50px;
   }
 
   .head_btn_register {
-    width: 340px; 
+    width: 340px;
     margin-top: 10px;
     background-color: #ff5722;
     color: white;
@@ -409,8 +455,8 @@ html {
   }
 
   .section1_content {
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto auto; 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     gap: 15px;
     padding: 0;
   }
@@ -422,13 +468,13 @@ html {
   }
 
   .section1_text h1 {
-    font-size: 25px; 
+    font-size: 25px;
     padding-bottom: 15px;
     color: #fff;
   }
 
   .section1_text p {
-    font-size: 16px; 
+    font-size: 16px;
     color: #bbb;
   }
 
@@ -458,7 +504,7 @@ html {
   }
 
   .card_text h1 {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   .section3 {
@@ -466,7 +512,7 @@ html {
   }
 
   .section3_main_content {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 30px;
     margin: 0 auto;
@@ -497,7 +543,7 @@ html {
   }
 
   .section3_list li {
-    font-size: 16px; 
+    font-size: 16px;
     padding-top: 5px;
   }
 }

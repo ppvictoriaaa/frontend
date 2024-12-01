@@ -1,4 +1,3 @@
-/* Ваші існуючі стилі (залишив без змін) */
 html,
 body {
   height: 100%;
@@ -191,6 +190,40 @@ body {
 .img_car {
   height: 80%;
   width: 100%;
+}
+
+@media (min-width: 1600px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 2.2em;
+  }
+
+  p {
+    font-size: 2.2em;
+  }
+  li {
+    font-size: 1.8em;
+  }
+
+  .allSections_container {
+    width: 20%;
+    height: 100%;
+  }
+
+  .trends_container {
+    width: 20%;
+    height: 100%;
+  }
+
+  .input_container {
+    width: 20%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {

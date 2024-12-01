@@ -155,3 +155,71 @@ button {
   border-width: 4px;
   box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
 }
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 30px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  .card-title {
+    font-size: 1.4em;
+  }
+
+  .card-price {
+    font-size: 1.2em;
+  }
+
+  .cart-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  td.card {
+    display: inline-block;
+    width: 45%;
+  }
+
+  table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  tbody {
+    display: contents;
+  }
+
+  td.category-cell {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  td.card {
+    width: 100%;
+  }
+
+  td.category-cell {
+    text-align: left;
+    padding: 10px;
+  }
+}
