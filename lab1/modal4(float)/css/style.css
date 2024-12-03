@@ -58,11 +58,11 @@ body {
   margin-right: 10px;
   border-radius: 5px;
   border: solid 5px rgb(116, 131, 116);
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .card-image:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
   border: none;
 }
 
@@ -95,6 +95,23 @@ body {
   width: 150px;
   padding-left: 15px;
   border-radius: 5px;
+}
+
+@media (min-width: 3000px) {
+  p {
+    font-size: 4.8em;
+  }
+  .date {
+    font-size: 2.8em;
+    width: 12%;
+  }
+  h3 {
+    font-size: 6.8em;
+  }
+
+  h2 {
+    font-size: 5.8em;
+  }
 }
 
 @media (max-width: 1200px) {

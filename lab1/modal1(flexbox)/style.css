@@ -44,14 +44,14 @@ body {
 .search-icon {
   position: absolute;
   right: 5px;
-  height: 20px;
-  width: 20px;
+  height: auto;
+  width: 10%;
   color: #999;
 }
 
 .logo_container {
-  height: 100px;
-  width: 250px;
+  height: auto;
+  width: 15%;
   border-style: solid;
   border-radius: 5px;
   border-color: #eaeaea;
@@ -73,7 +73,7 @@ body {
 }
 
 .sections {
-  height: 50px;
+  height: 30%;
   background-color: #333;
   border-radius: 5px;
   margin-left: 20px;
@@ -192,24 +192,57 @@ body {
   width: 100%;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 3100px) {
   h1,
   h2,
   h3,
   h4 {
-    font-size: 2.2em;
+    font-size: 6.2em;
+    margin: 80px 0;
   }
 
   p {
-    font-size: 2.2em;
+    font-size: 4.2em;
   }
   li {
-    font-size: 1.8em;
+    font-size: 3.8em;
+  }
+
+  .allSections-list li:hover {
+    font-size: 4.8em;
+    transition: font-size 0.3s ease;
+  }
+  .allSections-list {
+    gap: 50px;
   }
 
   .allSections_container {
     width: 20%;
     height: 100%;
+  }
+
+  .sections_list li.specific1 {
+    font-size: 4.8em;
+  }
+  .specific {
+    font-size: 4.8em;
+  }
+  .sections_list {
+    gap: 100px;
+  }
+
+  .search-input {
+    height: 150px;
+    font-size: 2.8em;
+  }
+
+  .sections_list li {
+    font-size: 3.8em;
+  }
+
+  .sections_list li:hover {
+    font-size: 4.8em;
+    transition: font-size 0.3s ease;
   }
 
   .trends_container {
@@ -224,73 +257,9 @@ body {
   .search-input {
     width: 100%;
   }
-}
-
-@media (max-width: 768px) {
-  .head {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .search-input {
-    width: 100%;
-    height: 40px;
-  }
-
-  .logo_container {
-    width: 200px;
-    height: 80px;
-  }
-
-  .sections_list {
-    flex-direction: column;
-    gap: 20px;
-    justify-content: space-between;
-  }
-
-  .sections {
-    width: 100%;
-    margin: 0;
-  }
-
-  .main_container {
-    flex-direction: column;
-    gap: 20px;
-  }
 
   .allSections-list {
     width: 100%;
-  }
-
-  .trends_container,
-  .allSections_container {
-    width: 100%;
-    height: auto;
-  }
-
-  .card {
-    width: 100%;
-  }
-
-  .search-input {
-    width: 90%;
-  }
-
-  .sections_list li {
-    font-size: 16px;
-  }
-
-  .sections_list li:hover {
-    font-size: 12px;
-  }
-
-  .specific {
-    font-size: 17px;
-  }
-
-  .img_car {
-    height: auto;
   }
 }
 

@@ -41,16 +41,22 @@ html {
 
 .head {
   display: grid;
-  grid-template-columns: 16% auto;
-  padding: 10px 10px 0 10px;
+  grid-template-columns: 50% auto;
+  padding: 0px 20px 0 20px;
   border: 5px solid #333;
   border-radius: 8px;
   background-color: #282828;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  justify-items: start;
 }
 
 .logo_elements {
   display: grid;
   grid-template-columns: 1fr 2fr 8fr;
+  height: 100%;
+  justify-items: start;
 }
 
 .logo_letters {
@@ -63,7 +69,8 @@ html {
 }
 
 .head_btn_register {
-  height: 60px;
+  width: 20%;
+  height: 70%;
   margin-bottom: 5px;
   margin-top: 5px;
   align-self: center;
@@ -120,8 +127,8 @@ html {
 }
 
 .section1_btn_register {
-  width: 360px;
-  height: 60px;
+  width: 60%;
+  height: 70%;
   margin-top: 20px;
   background-color: #ff5722;
   color: white;
@@ -191,6 +198,7 @@ html {
   padding: 30px 20px 20px 20px;
   background-color: #fff;
   border-radius: 8px;
+  height: 100%;
 }
 
 .card_text h1 {
@@ -298,49 +306,109 @@ html {
   color: #ff5722;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 3000px) {
   .section1_img {
     justify-self: end;
-    max-width: 60%;
+    max-width: 80%;
     height: 80%;
   }
   .section1_text h1 {
-    font-size: 70px;
+    font-size: 7.8em;
   }
-  p {
-    font-size: 30px;
+  .section1_text p {
+    font-size: 5.8em;
+  }
+
+  .section1 {
+    display: grid;
+    grid-template-rows: 20% 80%;
   }
 
   .section2_cards {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
   .card {
     height: auto;
     width: 100%;
   }
 
+  .section2_btn {
+    width: 20%;
+    height: 30%;
+    font-size: 3.8em;
+  }
+
+  .section3_card .num {
+    font-size: 8.8em;
+  }
+
+  .section3_card h2 {
+    font-size: 5.8em;
+  }
+
+  .section3 h1 {
+    font-size: 6.8em;
+  }
+
   .section3_card {
     height: auto;
-    width: 60%;
+    width: 50%;
   }
   .section3_main_content {
     grid-template-columns: 1fr 1fr;
     width: 100%;
   }
 
-  button {
-    font-size: larger;
+  .head_btn_register {
+    height: 90%;
+    width: 45%;
+    font-size: 4.8em;
+    border-radius: 15px;
+  }
+
+  .section1_btn_register {
+    height: 100%;
+    width: 55%;
+    font-size: 3.8em;
+  }
+
+  .card {
+    margin: 20px;
+    width: 80%;
+  }
+
+  .card_text h1 {
+    font-size: 5.2em;
+  }
+
+  p {
+    font-size: 3.8em;
   }
 
   .logo_elements {
     grid-row: 1;
     justify-items: center;
     display: grid;
-    grid-template-columns: 0.2fr 0.3fr 0.3fr 3fr;
+    grid-template-columns: 0.5fr 1.5fr 2fr 2fr;
+  }
+
+  .logo_letters {
+    font-size: 12.8em;
+  }
+
+  .head_logo_img {
+    width: 100%;
+    height: auto;
   }
 
   .section3_list li {
-    font-size: 40px;
+    font-size: 4.8em;
+  }
+
+  .head {
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
 
@@ -387,13 +455,17 @@ html {
     gap: 10px;
   }
   .section1_img {
-    height: 60%;
+    height: 40%;
   }
   .section2_cards {
     grid-template-columns: 1fr;
   }
   .card {
     width: 100%;
+  }
+  .section3_footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
   }
 }
 
@@ -512,12 +584,14 @@ html {
   }
 
   .section3_main_content {
+    display: grid;
+    align-items: center;
+
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 30px;
     margin: 0 auto;
     width: 100%;
-    justify-items: left;
   }
 
   .section3_btn {

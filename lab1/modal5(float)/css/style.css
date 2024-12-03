@@ -152,6 +152,7 @@ img {
 }
 
 .footer {
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -180,6 +181,78 @@ img {
 .footer_list li:hover {
   cursor: pointer;
   font-size: medium;
+}
+
+@media (min-width: 3000px) {
+  .block_email {
+    transform: translate(37%, 808%);
+  }
+
+  .head_container {
+    width: 40%;
+    height: 40%;
+  }
+
+  .block_img {
+    width: 20%;
+    height: 35%;
+  }
+
+  .img_logo {
+    margin-right: 37%;
+    font-size: 5.8em;
+  }
+
+  .slogan {
+    margin-right: 600px;
+  }
+  p {
+    font-size: 4.8em;
+  }
+  h4 {
+    font-size: 3.8em;
+  }
+
+  .footer_list li {
+    font-size: 2.8em;
+    width: 400px;
+  }
+
+  .footer_list {
+    column-count: 3;
+    column-gap: 250px;
+    width: 2080px;
+  }
+
+  .block_img2,
+  .block_img3 {
+    height: 60%;
+    width: 45%;
+  }
+
+  .img2 {
+    height: 50%;
+    width: 40%;
+  }
+
+  .div_text2 {
+    height: 70%;
+    width: 55%;
+  }
+
+  .input_email {
+    width: 20%;
+    height: 80%;
+  }
+
+  .btn_sub {
+    height: 100%;
+    width: 8%;
+  }
+
+  .text2 {
+    font-size: 2.8em;
+  }
 }
 
 @media (max-width: 1200px) {
