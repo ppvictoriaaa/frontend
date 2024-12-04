@@ -1,0 +1,271 @@
+html, body
+  height: 100%
+  margin: 0
+  font-family: "Arial", sans-serif
+  background-color: #374447
+  overflow-x: hidden
+
+.block_img
+  height: 140px
+  width: 155px
+  float: left
+  margin-left: 25.5%
+  margin-bottom: 0
+  border-radius: 8px
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4)
+
+p
+  float: right
+  font-size: 18px
+  color: #ecf0f1
+
+.slogan
+  margin-right: 220px
+  margin-top: 0
+
+.img_logo
+  margin-right: 29%
+  margin-top: 0
+  padding-top: 40px
+  width: auto
+  float: right
+  margin-bottom: 0
+  font-size: 36px
+  color: #c6c692
+
+.head_container
+  height: 420px
+  width: 740px
+  margin-top: 0
+  position: relative
+  top: 35%
+  left: 50%
+  transform: translate(-50%, -50%)
+  border-radius: 8px
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4)
+  background-color: #8f8f6a
+  padding-top: 8px
+  padding-bottom: 20px
+
+.block_img2, .block_img3
+  height: 210px
+  width: 330px
+  border: 3px solid #374447
+  float: left
+  border-radius: 8px
+  margin: 10px
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4)
+
+.block_img3
+  float: right
+
+.clearfix
+  clear: both
+  height: 20px
+
+.img2
+  height: 130px
+  width: 130px
+  background-color: #c6c692
+  float: left
+  margin-top: 40px
+  margin-left: 10px
+  border-radius: 8px
+
+.div_text2
+  background-color: #374447
+  height: 130px
+  width: 165px
+  float: right
+  margin-top: 40px
+  margin-right: 10px
+  border-radius: 8px
+  text-align: left
+  padding-left: 10px
+  padding-top: 5px
+
+.text2
+  font-size: small
+  color: #ecf0f1
+  padding: 0
+  margin: 0
+
+h4
+  margin: 0
+  padding-bottom: 4px
+  color: #c6c692
+
+img
+  height: 100%
+  width: 100%
+  border-radius: 8px
+  object-fit: cover
+
+.block_email
+  text-align: center
+  padding-top: 40px
+  width: auto
+  transform: translateX(40%)
+  height: 50px
+
+.input_email
+  width: 260px
+  height: 30px
+  float: left
+  margin-right: 10px
+  border: 1px solid #bdc3c7
+  border-radius: 5px
+  padding: 5px
+
+.btn_sub
+  height: 42px
+  width: 80px
+  float: left
+  background-color: #c6c692
+  color: 374447
+  border: none
+  border-radius: 5px
+  cursor: pointer
+  transition: background-color 0.3s
+
+.btn_sub:hover
+  background-color: #6e6e52
+
+.footer
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  border-top: 3px solid #8f8f6a
+  height: 100px
+  text-align: center
+  background-color: #374447
+
+.footer_list
+  display: inline-block
+  column-count: 3
+  column-gap: 50px
+  width: 580px
+
+.footer_list li
+  list-style: none
+  width: 180px
+  color: #ecf0f1
+  padding-top: 15px
+  text-align: left
+  font-size: small
+
+.footer_list li:hover
+  cursor: pointer
+  font-size: medium
+
+@media (min-width: 3000px)
+  .block_email
+    transform: translate(37%, 808%)
+
+  .head_container
+    width: 40%
+    height: 40%
+
+  .block_img
+    width: 20%
+    height: 35%
+
+  .img_logo
+    margin-right: 37%
+    font-size: 5.8em
+
+  .slogan
+    margin-right: 600px
+
+  p
+    font-size: 4.8em
+
+  h4
+    font-size: 3.8em
+
+  .footer_list li
+    font-size: 2.8em
+    width: 400px
+
+  .footer_list
+    column-count: 3
+    column-gap: 250px
+    width: 2080px
+
+  .block_img2, .block_img3
+    height: 60%
+    width: 45%
+
+  .img2
+    height: 50%
+    width: 40%
+
+  .div_text2
+    height: 70%
+    width: 55%
+
+  .input_email
+    width: 20%
+    height: 80%
+
+  .btn_sub
+    height: 100%
+    width: 8%
+
+  .text2
+    font-size: 2.8em
+
+@media (max-width: 1200px)
+  .footer
+    position: absolute
+
+  .block_email
+    width: auto
+    padding-left: 0
+    transform: translate(26%, 260%)
+
+@media (max-width: 800px)
+  .head_container
+    width: 100%
+    height: auto
+    padding-top: 20px
+    position: relative
+    transform: translate(-50%, -40%)
+
+  .block_img
+    width: 80px
+    height: 80px
+    margin: 0
+    padding: 0
+
+  .block_img2, .block_img3
+    width: 90%
+    margin: 10px auto
+    float: none
+
+  .img_logo
+    margin-right: 0
+    float: none
+    text-align: center
+
+  .slogan
+    margin: 0
+    padding-right: 15%
+
+  .block_email
+    width: auto
+    padding-left: 0
+    transform: translateX(2%)
+
+  .footer
+    height: 10%
+
+  .footer_list
+    width: 80%
+    padding: 0
+    column-gap: 25px
+
+  .footer_list li
+    font-size: 10px
+    padding-top: 5px

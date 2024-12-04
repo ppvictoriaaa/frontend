@@ -1,0 +1,35 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "scripts": {
+  "clean-modal1": "del /q lab1\\modal1\\dist\\sass_css\\* && del /q lab1\\modal1\\dist\\stylus_css\\*",
+  "clean-modal2": "del /q lab1\\modal2\\dist\\sass_css\\* && del /q lab1\\modal2\\dist\\stylus_css\\*",
+  "clean-modal3": "del /q lab1\\modal3\\dist\\sass_css\\* && del /q lab1\\modal3\\dist\\stylus_css\\*",
+  "clean-modal4": "del /q lab1\\modal4\\dist\\sass_css\\* && del /q lab1\\modal4\\dist\\stylus_css\\*",
+  "clean-modal5": "del /q lab1\\modal5\\dist\\sass_css\\* && del /q lab1\\modal5\\dist\\stylus_css\\*",
+  "clean-all": "npm run clean-modal1 && npm run clean-modal2 && npm run clean-modal3 && npm run clean-modal4 && npm run clean-modal5",
+  
+  "build-modal1-sass": "sass lab2/sass/modal1.scss lab1/modal1/dist/sass_css/styles.css --no-source-map",
+  "build-modal2-sass": "sass lab2/sass/modal2.scss lab1/modal2/dist/sass_css/styles.css --no-source-map",
+  "build-modal3-sass": "sass lab2/sass/modal3.scss lab1/modal3/dist/sass_css/styles.css --no-source-map",
+  "build-modal4-sass": "sass lab2/sass/modal4.scss lab1/modal4/dist/sass_css/styles.css --no-source-map",
+  "build-modal5-sass": "sass lab2/sass/modal5.scss lab1/modal5/dist/sass_css/styles.css --no-source-map",
+  "build-all-sass": "npm run build-modal1 && npm run build-modal2 && npm run build-modal3 && npm run build-modal4 && npm run build-modal5",
+
+  "build-modal1-stylus": "stylus lab2/stylus/modal1.styl -o lab1/modal1/dist/stylus_css/styles.css",
+  "build-modal2-stylus": "stylus lab2/stylus/modal2.styl -o lab1/modal2/dist/stylus_css/styles.css",
+  "build-modal3-stylus": "stylus lab2/stylus/modal3.styl -o lab1/modal3/dist/stylus_css/styles.css",
+  "build-modal4-stylus": "stylus lab2/stylus/modal4.styl -o lab1/modal4/dist/stylus_css/styles.css",
+  "build-modal5-stylus": "stylus lab2/stylus/modal5.styl -o lab1/modal5/dist/stylus_css/styles.css",
+  "build-all-stylus": "npm run build-modal1-stylus && npm run build-modal2-stylus && npm run build-modal3-stylus && npm run build-modal4-stylus && npm run build-modal5-stylus",
+
+  "watch-stylus": "stylus lab2/stylus/modal1.styl -w -o lab1/modal1/dist/stylus_css/styles.css && stylus lab2/stylus/modal2.styl -w -o lab1/modal2/dist/stylus_css/styles.css && stylus lab2/stylus/modal3.styl -w -o lab1/modal3/dist/stylus_css/styles.css && stylus lab2/stylus/modal4.styl -w -o lab1/modal4/dist/stylus_css/styles.css && stylus lab2/stylus/modal5.styl -w -o lab1/modal5/dist/stylus_css/styles.css",
+
+  "watch-sass": "sass --watch lab2/sass/modal1.scss:lab1/modal1/dist/sass_css/styles.css --no-source-map && sass --watch lab2/sass/modal2.scss:lab1/modal2/dist/sass_css/styles.css --no-source-map && sass --watch lab2/sass/modal3.scss:lab1/modal3/dist/sass_css/styles.css --no-source-map && sass --watch lab2/sass/modal4.scss:lab1/modal4/dist/sass_css/styles.css --no-source-map && sass --watch lab2/sass/modal5.scss:lab1/modal5/dist/sass_css/styles.css --no-source-map"
+}
+,
+  "devDependencies": {
+    "del": "^8.0.0",
+    "sass": "^1.56.0"
+  }
+}
